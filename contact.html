@@ -3,78 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f5f5dc; /* beige */
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #4682b4;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    nav {
-      background-color: #87ceeb;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #333;
-      font-weight: bold;
-    }
-    main {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    img.contact {
-      display: block;
-      margin: 20px auto;
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-    }
-    footer {
-      background-color: #4682b4;
-      color: white;
-      text-align: center;
-      padding: 10px;
-      margin-top: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Contact Me</h1>
+    <h1>My Personal Website</h1>
+    <p>Welcome to my professional webpage</p>
   </header>
-
+ 
   <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="blog.html">Blog</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
 
   <main>
-    <!-- Contact Icon/Image -->
-    <img src="images/contact-icon.png" alt="Contact icon" class="contact">
+    <section>
+      <h2>Contact Me</h2>
+      <p>If you’d like to reach out, here are my details:</p>
+      <ul>
+        <li>Email: adelaidempuchane@gmail.com</li>
+        <li>Phone: +267-700-000-000</li>
+      </ul>
+    </section>
 
-    <p>If you’d like to reach out, here are my details:</p>
-    <ul>
-      <li>Email: adelaidempuchane@gmail.com</li>
-      <li>Phone: +267-700-000-000</li>
-    </ul>
+    <section>
+      <h2>External Links</h2>
+      <p><a href="https://github.com/adelaidempuchane-byte" target="_blank">My GitHub</a></p>
+      <p><a href="https://www.linkedin.com/in/adelaide" target="_blank">My LinkedIn</a></p>
+      <p><a href="https://www.bac.ac.bw" target="_blank">BAC Website</a></p>
+    </section>
+
+    <section>
+      <h2>Contact Form</h2>
+      <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Adelaide Mpuchane</p>
+    <p>&copy; 2026 Adelaide Mpuchane. All Rights Reserved.</p>
   </footer>
 </body>
 </html>
